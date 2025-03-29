@@ -73,10 +73,10 @@ services:
       - hewpao-network
 
   minio:
-    image: "minio/minio:latest"
+    image: "docker.io/bitnami/minio:2022"
     environment:
-      S3_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID}
-      S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY}
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY_ID}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_ACCESS_KEY}
     command: server /data --console-address ":9001"
     volumes:
       - minio-data:/data
