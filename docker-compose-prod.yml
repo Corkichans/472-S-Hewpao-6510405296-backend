@@ -1,6 +1,6 @@
 services:
   app:
-    image: "BACKEND_IMAGE:-corkichan/hewpao-s-backend:latest"
+    image: "corkichan/hewpao-s-backend:v0.1.6"
     environment:
       DB_HOST: ${DB_HOST}
       DB_DATABASE: ${DB_DATABASE}
@@ -57,7 +57,7 @@ services:
       retries: 5
 
   front:
-    image: "FRONTEND_IMAGE:-corkichan/hewpao-s-frontend:latest"
+    image: "corkichan/hewpao-s-frontend:v0.1.0"
     environment:
       NEXT_PUBLIC_API_BASEURL: ${NEXT_PUBLIC_API_BASEURL}
       AUTH_URL: ${AUTH_URL}
