@@ -1,6 +1,6 @@
 services:
   app:
-    image: "corkichan/hewpao-s-backend:v0.1.0"
+    image: "corkichan/hewpao-s-backend:v0.1.6"
     environment:
       DB_HOST: ${DB_HOST}
       DB_DATABASE: ${DB_DATABASE}
