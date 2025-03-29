@@ -55,7 +55,7 @@ func NewConfig() (config Config) {
 		S3Endpoint:            getEnv("S3_ENDPOINT"),
 		S3AccessKeyId:         getEnv("S3_ACCESS_KEY_ID"),
 		S3SecretAccessKey:     getEnv("S3_SECRET_ACCESS_KEY"),
-		S3UseSSL:              false,
+		S3UseSSL:              true,
 		S3Expiration:          getEnv("S3_EXPIRATION"),
 
 		EmailServer:   getEnv("EMAIL_SERVER"),
