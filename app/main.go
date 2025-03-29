@@ -37,7 +37,7 @@ func setup() *fiber.App {
 	app.Use(logger.New())
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:3000, https://hewpao-fe.peerawitp.me", // Allow requests from the frontend
+		AllowOrigins: "http://localhost:3000, https://hewpao-fe.peerawitp.me, https://api-g4-472.jgogo01.in.th", // Allow requests from the frontend
 		AllowMethods: "GET,POST,PUT,DELETE",                                   // Allow specific HTTP methods
 		AllowHeaders: "Content-Type,Authorization",
 	}))
