@@ -27,8 +27,6 @@ services:
     ports:
       - ${APP_PORT}:9090
     restart: on-failure
-    volumes:
-      - .:/app
     networks:
       - hewpao-network
     depends_on:
@@ -66,8 +64,6 @@ services:
     ports:
       - ${FRONT_PORT}:9090
     restart: on-failure
-    volumes:
-      - .:/app
     networks:
       - hewpao-network
 
